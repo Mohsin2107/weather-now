@@ -18,7 +18,7 @@ async function getWeather(cityInput) {
   const cities = cityInput.split(",").map((city) => city.trim());
 
   try {
-    const response = await fetch("http://localhost:5501/getWeather", {
+    const response = await fetch("https://weather-nslu.onrender.com/getWeather", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
